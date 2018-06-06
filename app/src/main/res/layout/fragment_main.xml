@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/background_profile"
+            android:padding="10dp"
+            android:id="@+id/ln_profile"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_cim_baby_ava"
+                android:src="@drawable/baby_ava"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#000"/>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/profile_tv_baby_name"
+                    android:text="Baby Name"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/profile_tv_baby_yob"
+                    android:text="baby year of birth"
+                    android:textColor="#000"
+                    android:textStyle="italic"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ListView
+            android:layout_margin="16dp"
+            android:id="@+id/lv_task_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+        <TextView
+            android:id="@+id/profile_tv_add_task_btn"
+            android:layout_margin="25dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:background="@drawable/background_profile"
+            android:text="Add Task"
+            android:textSize="25dp"
+            android:layout_width="300dp"
+            android:layout_height="35dp" />
+    </LinearLayout>
+</FrameLayout>

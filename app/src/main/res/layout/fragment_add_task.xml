@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/background_profile"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_task_name"
+                android:textAlignment="center"
+                android:hint="Please Input Task Name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:background="@drawable/background_profile"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textAlignment="center"
+                android:hint="Please input a num"
+                android:id="@+id/addtask_et_time_adding"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Please choose the type"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rdo_seconds"
+                        android:text="seconds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/rdo_minutes"
+                        android:text="minutes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/rdo_hours"
+                        android:text="hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rdo_days"
+                        android:text="days"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/rdo_months"
+                        android:text="months"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/rdo_years"
+                        android:text="years"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/addtask_btn_ok"
+                android:text="ok"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/addtask_btn_cancel"
+                android:text="cancel"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
